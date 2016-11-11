@@ -1,4 +1,4 @@
-#!C:\Ruby23-x64\bin/ruby.exe
+#!/usr/local/bin/ruby
 # coding: utf-8
 
 =begin
