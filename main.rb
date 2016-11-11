@@ -1,4 +1,4 @@
-#!/usr/local/bin/ruby
+#!/usr/bin/ruby
 # coding: utf-8
 
 =begin
@@ -16,16 +16,34 @@
 =end
 
 require 'mysql2'
+require 'tk'
 
+puts "I'm Jack of all trades... let's be Lazy Programmer! :)\n\n"
 
-puts "Welcome to Jack of all trades... :)\n" + "Be Lazy Programmer!\n\n"
+button = TkButton.new
+button.text = 'exit'
+button.command = proc { exit }
+button.pack
 
-while input = STDIN.gets
-  break if input.chomp == "exit"
-  input.chomp!
-  puts input
+Tk.mainloop
+
+=begin
+while print "joat ? " or input = STDIN.gets
+  #exit or quit, both of uppercase letter and lower letter
+  break if input.chomp! =~ /exit|quit/i
+  
+  case input
+  when /help/i then
+    puts "HELP"
+  when /todo/i then
+    puts "TODO"
+  else
+    puts "ELSE"
+  end # - case
+
 end
-
+=end
+=begin
 client = Mysql2::Client.new(:host     => "localhost",
                             :username => "ht",
                             :password => "gundam",
@@ -33,8 +51,10 @@ client = Mysql2::Client.new(:host     => "localhost",
 client.query("SELECT number, name FROM test_table").each do |col1, col2|
   p col1, col2
 end
-
+=end
 #val1 = 123
 #val2 = client.escape('abc')
 #client.query("INSERT INTO tblname (col1,col2) VALUES (#{val1},'#{val2}')")
+
+puts "have a nice hacking!"
 
