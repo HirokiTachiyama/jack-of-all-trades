@@ -13,7 +13,7 @@
 * -> To operate mysql, use MySQL Workbench or of MySQL's terminal.
 * -> To operate ruby gem, use Ruby's terminal.
 * Because of imperfection in  setting of environment variables.
-=end
+* 
 
 require 'mysql2'
 
