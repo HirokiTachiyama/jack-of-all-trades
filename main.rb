@@ -19,15 +19,15 @@ require 'mysql2'
 require 'tk'
 
 puts "I'm Jack of all trades... let's be Lazy Programmer! :)\n\n"
-
+=begin
 button = TkButton.new
 button.text = 'exit'
 button.command = proc { exit }
 button.pack
 
 Tk.mainloop
+=end
 
-=begin
 while print "joat ? " or input = STDIN.gets
   #exit or quit, both of uppercase letter and lower letter
   break if input.chomp! =~ /exit|quit/i
@@ -42,7 +42,7 @@ while print "joat ? " or input = STDIN.gets
   end # - case
 
 end
-=end
+
 =begin
 client = Mysql2::Client.new(:host     => "localhost",
                             :username => "ht",
