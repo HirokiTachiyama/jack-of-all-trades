@@ -15,9 +15,9 @@
 * Because of imperfection in  setting of environment variables.
 =end
 
-require 'mysql2'
-require 'tk'
-
+#require 'mysql2'
+#require 'tk'
+require_relative "todo"
 puts "I'm Jack of all trades... let's be Lazy Programmer! :)\n\n"
 =begin
 button = TkButton.new
@@ -36,7 +36,7 @@ while print "joat ? " or input = STDIN.gets
   when /help/i then
     puts "HELP"
   when /todo/i then
-    puts "TODO"
+    Todo.new.main_loop
   else
     puts "ELSE"
   end # - case

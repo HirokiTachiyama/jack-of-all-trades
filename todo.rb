@@ -17,7 +17,32 @@
 
 require 'mysql2'
 
+=end
+
 class Todo
+  def initialize
+    puts "start Todo"
+  end
+
+  def main_loop
+    while print "joat ? Todo : " or input = STDIN.gets
+      #exit or quit, both of uppercase letter and lower letter
+      break if input.chomp! =~ /exit|quit/i
+
+      case input
+      when /help/i then
+        puts "HELP"
+      when /todo/i then
+        Todo.new.main_loop
+      else
+        puts "ELSE"
+      end # - case
+    end
+
+    puts "end Todo"
+  end
+
   
+
 end
 
