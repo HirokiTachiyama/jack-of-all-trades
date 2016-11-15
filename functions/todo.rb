@@ -1,4 +1,3 @@
-#!C:\Ruby23-x64\bin/ruby.exe
 # coding: utf-8
 
 =begin
@@ -15,14 +14,9 @@
 * Because of imperfection in  setting of environment variables.
 * 
 
-require 'mysql2'
-
 =end
 
-class Todo
-  def initialize
-    puts "start Todo"
-  end
+class Todo < super_function
 
   def main_loop
     while print "joat ? Todo : " or input = STDIN.gets

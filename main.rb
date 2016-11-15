@@ -17,7 +17,7 @@
 
 #require 'mysql2'
 #require 'tk'
-require_relative "todo"
+require_relative "functions/todo"
 puts "I'm Jack of all trades... let's be Lazy Programmer! :)\n\n"
 =begin
 button = TkButton.new
