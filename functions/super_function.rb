@@ -16,7 +16,7 @@
 
 =end
 
-class super_function
+class Super_function
   attr_accessor :@function_name
 
   def initialize

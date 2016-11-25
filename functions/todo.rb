@@ -15,6 +15,8 @@
 * 
 
 =end
+require_relative "super_function"
+
 
 class Todo < super_function
 
